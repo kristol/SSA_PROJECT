@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 6vh;
+}
+
+p {
+  color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.logo img {
+  height: 70px;
+  padding: 10px 0 10px 50px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-right: 10vw;
+  margin-left: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+@media (max-width: 880px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    height: 93vh;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    font-size: 40px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 1700px) {
+  .navbar-links li a {
+    padding-right: 7.5vw;
+  }
+}
+
+@media (max-width: 1360px) {
+  .navbar-links li a {
+    padding-right: 6vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-links li a {
+    padding-right: 4vw;
+  }
+}
+
+@media (max-width: 1050px) {
+  .navbar-links li a {
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 940px) {
+  .navbar-links li a {
+    padding-right: 1vw;
+  }
+}
+
+/* CONTENT */
+.content {
+  background-color: black;
+  height: 100%;
+  color: white;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.top {
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 50%,
+                                      rgb(0, 0, 0) 97%),url(../images/psychoboy.JPG);
+  background-repeat: no-repeat;
+  background-size: 206vh;
+  background-position: center center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.top h1 {
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+
+.links {
+  display: block;
+  width: 60%;
+}
+
+.link1 {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: 4px solid white;
+  padding: 10px;
+  transition: all 0.5s;
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+}
+
+.link1:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.row{
+  display: flex;
+}
+
+.logo-div img{
+  padding-right: 10px;
+  width: 70px;
+}
+
+
+.footer{
+  display: flex;
+  height: 100px;
+  background-color: rgb(26, 26, 26);
+  margin-top: 10px;
+}
+
+
+.footer h1{
+  font-size: 20px;
+  text-align: center;
+  
+}
