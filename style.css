@@ -36,9 +36,7 @@ p {
   padding: 10px 20px 10px 40px;
 }
 
-.navbar-links{
-  animation: 0.5s ease-in-out 0s 1 normal none running navLinkFade;
-}
+  
 
 
 .navbar-links ul {
@@ -91,8 +89,7 @@ p {
     display: none;
     width: 100%;
     height: 93vh;
-    transform: translateY(-1000%);
-    transition: all 1s ease-in-out;
+    
   }
   .navbar {
     flex-direction: column;
@@ -118,20 +115,10 @@ p {
 
   .navbar-links.active {
     display: flex;
-    transform: translateY(0%);
+    overflow-y: hidden;
   }
 
 }
-
-@keyframes navLinkFade{
-  from{
-    transform: translateX(100%);
-  }
-  to{
-    transform: translateX(0%);
-  }
-}
-
 
 
 @media (max-width: 1700px) {
