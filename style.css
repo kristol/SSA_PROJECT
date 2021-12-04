@@ -276,16 +276,16 @@ p {
 
 .social h1{
   font-size: 40px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.audio img{
+.audio .links img{
   width: 40px;
   height: 40px;
   margin-left: 20px;
 }
 
-.social img{
+.social .links img{
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -294,7 +294,6 @@ p {
 @media (max-width: 950px){
   .row0{
     display: flex;
-    
     flex-direction: column;
     align-items: center;
   }
@@ -310,24 +309,26 @@ p {
     align-items: center;
     flex-direction: column;
   }
+
   .audio h1{
-    font-size: 40px;
+    font-size: 25px;
     margin-left: 0;
   }
-  
+
   .social h1{
-    font-size: 40px;
-    margin-right: 0;
+    font-size: 25px;
+    margin-left: 0;
   }
+
   
-  .audio img{
+  .audio .links img{
     width: 40px;
     height: 40px;
     margin-left: 10px;
     margin-right: 10px;
   }
   
-  .social img{
+  .social .links img{
     width: 40px;
     height: 40px;
     margin-left: 10px;
