@@ -35,8 +35,8 @@ p {
 }
 
 .logo img {
-  height: 60px;
-  padding: 10px 20px 10px 16px;
+    height: 60px;
+    padding: 10px 20px 5px 16px;
 }
 
 .navbar-links ul {
