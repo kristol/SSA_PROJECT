@@ -234,14 +234,32 @@ p {
   }
 
   .artist-name h1{
-    font-size: 60px;
+    font-size: 100px;
     text-align: center;
-    padding: 0;
+    padding-top: 30px;
   }
 
   .artist-desc{
     margin: 0;
     margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 620px){
+  .artist-name h1{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+}
+
+@media (max-width: 500px){
+  .artist-name h1{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px;
   }
 
 }
@@ -310,12 +328,12 @@ p {
   }
 
   .audio h1{
-    font-size: 40px;
+    font-size: 6vw;
     margin-left: 0;
   }
 
   .social h1{
-    font-size: 40px;
+    font-size: 6vw;
     margin-right: 0;
   }
 
@@ -337,12 +355,10 @@ p {
 
 @media (max-width: 600px){
   .audio h1{
-    font-size: 1.7rem;
     margin-left: 0;
   }
 
   .social h1{
-    font-size: 1.7rem;
     margin-right: 0;
   }
 }
@@ -380,7 +396,7 @@ p {
 .placeholder{
   width: 350px;
   height: 350px;
-  background-color: rgb(29, 0, 56);
+  /*background-color: rgb(29, 0, 56);*/
   margin: 20px;
 }
 
@@ -420,7 +436,7 @@ p {
 
   .placeholder{
     width: 350px;
-    height: 350px;
+    height: 0;
   }
 }
 
