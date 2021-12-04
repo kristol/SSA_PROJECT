@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: white;
   font-size: 6vh;
 }
@@ -180,6 +180,13 @@ p {
     letter-spacing: 2vw;
 }
 
+.content h3{
+    color: white;
+    margin-top: 70px;
+    font-size: 3vw;
+    text-align: center;
+}
+
 .content a{
     color: white;
     margin-top: 70px;
@@ -187,7 +194,6 @@ p {
     text-align: center;
     text-decoration: none;
 }
-
 
 
 
