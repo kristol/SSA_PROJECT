@@ -33,7 +33,7 @@ p {
 
 .logo img {
   height: 60px;
-  padding: 10px 20px 10px 40px;
+  padding: 10px 20px 10px 30px;
 }
 
   
@@ -276,7 +276,7 @@ p {
 
 .social h1{
   font-size: 40px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .audio .links img{
@@ -311,13 +311,13 @@ p {
   }
 
   .audio h1{
-    font-size: 25px;
+    font-size: 40px;
     margin-left: 0;
   }
 
   .social h1{
-    font-size: 25px;
-    margin-left: 0;
+    font-size: 40px;
+    margin-right: 0;
   }
 
   
@@ -335,6 +335,19 @@ p {
     margin-right: 10px;
   }
 }
+
+@media (max-width: 600px){
+  .audio h1{
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .social h1{
+    font-size: 2rem;
+    margin-right: 0;
+  }
+}
+
 
 
 .row1 h1 {
@@ -456,14 +469,16 @@ p {
 /* FOOTER */
 .footer{
   display: flex;
-  height: 100px;
+  height: 30px;
   background-color: rgb(26, 26, 26);
   margin-top: 10px;
+  align-items: center;
+  justify-content: left;
 }
 
 
 .footer h1{
-  font-size: 20px;
+  font-size: 10px;
   text-align: center;
-  
+  margin-left: 10px;
 }
