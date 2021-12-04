@@ -107,7 +107,7 @@ p {
 
   .navbar-links li a {
     font-size: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-right: 0;
     margin-left: 0;
   }
@@ -270,24 +270,24 @@ p {
 
 .audio h1{
   font-size: 40px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .social h1{
   font-size: 40px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .audio .links img{
   width: 40px;
   height: 40px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .social .links img{
   width: 40px;
   height: 40px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 @media (max-width: 950px){
@@ -337,12 +337,12 @@ p {
 
 @media (max-width: 600px){
   .audio h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-left: 0;
   }
 
   .social h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-right: 0;
   }
 }
