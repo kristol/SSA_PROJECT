@@ -29,15 +29,13 @@ p {
   align-items: center;
   background-color: black;
   color: whitesmoke;
+  height: fit-content;
 }
 
 .logo img {
   height: 60px;
-  padding: 10px 20px 10px 30px;
+  padding: 10px 20px 10px 16px;
 }
-
-  
-
 
 .navbar-links ul {
   margin: 0;
