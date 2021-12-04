@@ -375,7 +375,7 @@ p {
   width: 100%;
   flex-wrap: wrap;
   justify-content:space-evenly;
-  
+  margin-bottom: 100px;
 }
 
 .row2 img{
