@@ -25,6 +25,13 @@ function enableScrolling() {
   window.onscroll = function () {};
 }
 
-
+var timeleft = 4;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+  }
+  document.getElementById("counter").innerHTML = timeleft;
+  timeleft -= 1;
+}, 1000);
 
 
