@@ -288,6 +288,11 @@ p {
   margin-right: 25px;
 }
 
+.audio .links{
+  display: flex;
+  flex-direction: row;
+}
+
 .audio .links img{
   width: 40px;
   height: 40px;
@@ -352,6 +357,17 @@ p {
 
   .social h1{
     margin-right: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .audio .links{
+    flex-direction: column;
+  }
+
+  .audio .links .lin2{
+    display: flex;
+    justify-content: center;
   }
 }
 
