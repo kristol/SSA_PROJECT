@@ -29,7 +29,7 @@ p {
   align-items: center;
   background-color: black;
   color: whitesmoke;
-  height: fit-content;
+  height: max-content;
 }
 
 .logo img {
@@ -42,8 +42,7 @@ p {
   padding: 0;
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  
+  justify-content: space-between;
 }
 
 .navbar-links li {
@@ -79,7 +78,7 @@ p {
   border-radius: 10px;
 }
 
-@media (max-width: 890px) {
+@media screen and (max-width: 890px) {
   .toggle-button {
     display: flex;
   }
@@ -120,44 +119,40 @@ p {
 }
 
 
-@media (max-width: 1700px) {
+@media screen and (max-width: 1700px) {
   .navbar-links li a {
     padding-right: 7.5vw;
   }
 }
 
-@media (max-width: 1360px) {
+@media screen and  (max-width: 1360px) {
   .navbar-links li a {
     padding-right: 6vw;
   }
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .navbar-links li a {
     padding-right: 5vw;
   }
 }
 
-@media (max-width: 1090px) {
+@media screen and (max-width: 1090px) {
   .navbar-links li a {
     padding-right: 3vw;
   }
 }
 
-@media (max-width: 940px) {
+@media screen and (max-width: 940px) {
   .navbar-links li a {
-    padding-right: 2vw;
+    padding-right: 0;
   }
   
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .artist-name h1 {
     font-size: 3vh;
-  }
-
-  .navbar-links li a {
-    padding-right: 0;
   }
   
 }
@@ -201,21 +196,12 @@ p {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin: 0 30px 0 0;
-  /*
-  display: flex;
-  max-width: 100%;
-  min-width: 200px;
-  grid-area: 1 / 3 / 2 / 4;
-  align-items: center;
-  padding-right: 10px;
-  text-transform: uppercase;
-  margin-top: 60px;
-  margin-right: 30px;*/
+  margin: 30px 30px 0 0;
+  max-width: 500px;
+  
 }
 
 .artist-desc p{
-  width: 50vh;
   text-align: justify;
   text-justify: auto;
   text-transform: uppercase;
@@ -223,14 +209,19 @@ p {
 }
 
 
-@media (max-width: 1070px){
+@media (max-width: 1180px){
   .about-artist {
     flex-direction: column;
     justify-content: none;
   }
   .artist-name{
     margin: 0;
-    
+  }
+
+  .artist-desc p{
+    font-size: 13px;
+    padding-bottom: 70px;
+
   }
 
   .artist-name h1{
@@ -242,6 +233,7 @@ p {
   .artist-desc{
     margin: 0;
     margin-bottom: 30px;
+    max-width: 600px;
   }
 
 }
@@ -253,23 +245,23 @@ p {
     padding-top: 30px;
   }
 
+  .artist-desc{
+    max-width: 480px;
+  }
+
 }
 
 @media (max-width: 500px){
   .artist-name h1{
-    font-size: 60px;
+    font-size: 63px;
     text-align: center;
     padding-top: 30px;
   }
 
-}
-
-
-@media (max-width: 600px){
-  .artist-desc p{
-    width: 40vh;
-    
+  .artist-desc{
+    max-width: 380px;
   }
+
 }
 
 
@@ -308,7 +300,7 @@ p {
   margin-right: 25px;
 }
 
-@media (max-width: 950px){
+@media screen and (max-width: 1020px){
   .row0{
     display: flex;
     flex-direction: column;
@@ -353,7 +345,7 @@ p {
   }
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
   .audio h1{
     margin-left: 0;
   }
@@ -405,7 +397,7 @@ p {
   text-transform: uppercase;
 }
 
-@media (max-width: 1600px){
+@media screen and (max-width: 1600px){
 
   .row2 img{
     margin: 10px 90px 10px 90px;
@@ -418,7 +410,7 @@ p {
 
 
 
-@media (max-width: 1100px){
+@media screen and (max-width: 1100px){
   .row2 img{
     margin:30px 30px 0px 30px;
   }

@@ -3,6 +3,7 @@ const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
+  /*
   if (navbarLinks.classList[1] == "active") {
     disableScrolling();
     console.log("scrolling disabled");
@@ -10,6 +11,7 @@ toggleButton.addEventListener("click", () => {
     enableScrolling();
     console.log("scrolling enabled");
   }
+  */
 });
 
 
