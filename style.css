@@ -394,6 +394,24 @@ p {
   
 }
 
+.row2 .itemb img{
+  width: 350px;
+  height: 350px;
+  margin: 20px 20px 5px 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 0%;
+  
+}
+
+.row2 .itemb img:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
+  /*box-shadow: 0 0 50px #8970A2;*/
+  
+}
+
 .placeholder{
   width: 350px;
   height: 350px;
@@ -402,6 +420,10 @@ p {
 }
 
 .item p{
+  text-align: center;
+  text-transform: uppercase;
+}
+.itemb p{
   text-align: center;
   text-transform: uppercase;
 }
