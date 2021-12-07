@@ -14,7 +14,7 @@ body {
 
 h1 {
   color: white;
-  font-size: 12vw;
+  font-size: 14vw;
 }
 
 h2{
@@ -173,7 +173,7 @@ p {
 .top {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%,
+  background: linear-gradient(180deg, rgba(83, 83, 83, 0) 70%,
     rgb(0, 0, 0) 100%), url(../images/threefifty.jpg);
   background-size: 100%;
   align-items: center;
@@ -195,7 +195,11 @@ p {
   padding-top: 50px;
   text-align: center;
   text-transform: uppercase;
-  
+}
+
+.top a{
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -229,7 +233,7 @@ p {
 .row{
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   padding-top: 80px;
   padding-right: 65px;
   justify-content: space-between;
@@ -253,7 +257,7 @@ p {
 
 @media (max-width: 900px){
   .links a{
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .logo-div img{
@@ -263,11 +267,16 @@ p {
   .row{
     padding-right: 55px;
   }
+
+  .link1 {
+    width: 80%;
+  }
+  
 }
 
 @media (max-width: 550px){
   .links a{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .logo-div img{
@@ -275,11 +284,20 @@ p {
     height: 45px;
   }
   .row{
+    padding-top: 50px;
     padding-right: 45px;
   }
 
   .link1 {
     border: 2px solid white;
+  }
+
+  h1 {
+    font-size: 25vw;
+  }
+
+  h2{
+    font-size: 10vw;
   }
 
 }
