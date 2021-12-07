@@ -264,6 +264,18 @@ p {
 
 }
 
+@media (max-width: 400px){
+  .artist-name h1{
+    font-size: 45px;
+    padding-top: 25px;
+  }
+
+  .artist-desc{
+    max-width: 290px;
+  }
+
+}
+
 
 /* SONGS */
 
@@ -484,7 +496,18 @@ p {
   }
 }
 
+@media (max-width: 400px){
+  .row2 img{
+    width: 250px;
+    height: 250px;
+  }
 
+  .placeholder{
+    width: 250px;
+    height: 0px;
+  }
+
+}
 
 
 

@@ -193,6 +193,10 @@ p {
   }
 }
 
+.name{
+  text-align: center;
+}
+
 .top h1 {
   padding-top: 50px;
   text-align: center;
@@ -231,7 +235,7 @@ p {
 .row {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   padding-top: 80px;
   padding-right: 65px;
   justify-content: space-between;
