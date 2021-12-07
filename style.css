@@ -288,16 +288,19 @@ p {
 .row0{
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .audio h1{
   font-size: 40px;
   margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 .social h1{
   font-size: 40px;
   margin-right: 25px;
+  margin-bottom: 10px;
 }
 
 .audio .links{
@@ -383,7 +386,9 @@ p {
   }
 }
 
-
+.row1{
+  margin-bottom: 20px;
+}
 
 .row1 h1 {
   text-align: center;

@@ -13,8 +13,8 @@ body {
 }
 
 h1 {
-  color: white;
-  font-size: 14vw;
+  color:white;
+  font-size: 12vw;
 }
 
 h2 {
@@ -170,13 +170,13 @@ p {
       rgba(0, 0, 0, 0) 20%,
       #000000 100%
     ),
-    url(../images/threefifty.jpg);
+    url(../images/VVGIRL.png);
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 20%,
       rgb(0, 0, 0) 100%
     ),
-    url(../images/threefifty.jpg);
+    url(../images/VVGIRL.png);
   background-size: 100%;
   align-items: center;
   flex-direction: column;
@@ -301,7 +301,7 @@ p {
   }
 
   h1 {
-    font-size: 25vw;
+    font-size: 15vw;
   }
 
   h2 {
