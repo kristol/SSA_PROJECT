@@ -9,7 +9,8 @@ body {
   padding: 0;
   background-color: black;
   overflow-x: hidden;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
+  height: calc(100vh - 100px);
 }
 
 h1 {
@@ -21,6 +22,9 @@ p {
   color: white;
 }
 
+img {
+  color: #fff;
+}
 /* NAVBAR */
 
 .navbar {
@@ -59,7 +63,6 @@ p {
   font-size: 20px;
 }
 
-
 .toggle-button {
   position: absolute;
   top: 1.3rem;
@@ -86,7 +89,6 @@ p {
     display: none;
     width: 100%;
     height: 93vh;
-    
   }
   .navbar {
     flex-direction: column;
@@ -96,12 +98,10 @@ p {
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
-    
   }
 
   .navbar-links li {
     text-align: center;
-    
   }
 
   .navbar-links li a {
@@ -115,9 +115,7 @@ p {
     display: flex;
     overflow-y: hidden;
   }
-
 }
-
 
 @media screen and (max-width: 1700px) {
   .navbar-links li a {
@@ -125,7 +123,7 @@ p {
   }
 }
 
-@media screen and  (max-width: 1360px) {
+@media screen and (max-width: 1360px) {
   .navbar-links li a {
     padding-right: 6vw;
   }
@@ -147,14 +145,12 @@ p {
   .navbar-links li a {
     padding-right: 0;
   }
-  
 }
 
 @media screen and (max-width: 600px) {
   .artist-name h1 {
     font-size: 3vh;
   }
-  
 }
 
 /* ABOUT ARTIST */
@@ -184,10 +180,9 @@ p {
   align-items: center;
   justify-self: center; */
   margin: 30px 0 0 30px;
-  
 }
 
-.artist-name h1{
+.artist-name h1 {
   font-size: 80px;
   text-align: center;
 }
@@ -198,166 +193,155 @@ p {
   align-self: center;
   margin: 30px 30px 0 0;
   max-width: 500px;
-  
 }
 
-.artist-desc p{
+.artist-desc p {
   text-align: justify;
   text-justify: auto;
   text-transform: uppercase;
-
 }
 
-
-@media (max-width: 1180px){
+@media (max-width: 1180px) {
   .about-artist {
     flex-direction: column;
     justify-content: none;
   }
-  .artist-name{
+  .artist-name {
     margin: 0;
   }
 
-  .artist-desc p{
+  .artist-desc p {
     font-size: 13px;
     padding-bottom: 40px;
-
   }
 
-  .artist-name h1{
+  .artist-name h1 {
     font-size: 100px;
     text-align: center;
     padding-top: 30px;
   }
 
-  .artist-desc{
+  .artist-desc {
     margin: 0;
     margin-bottom: 30px;
     max-width: 600px;
   }
-
 }
 
-@media (max-width: 620px){
-  .artist-name h1{
+@media (max-width: 620px) {
+  .artist-name h1 {
     font-size: 80px;
     text-align: center;
     padding-top: 30px;
   }
 
-  .artist-desc{
+  .artist-desc {
     max-width: 480px;
   }
-
 }
 
-@media (max-width: 500px){
-  .artist-name h1{
+@media (max-width: 500px) {
+  .artist-name h1 {
     font-size: 63px;
     text-align: center;
     padding-top: 30px;
   }
 
-  .artist-desc{
+  .artist-desc {
     max-width: 380px;
   }
-
 }
 
-@media (max-width: 400px){
-  .artist-name h1{
+@media (max-width: 400px) {
+  .artist-name h1 {
     font-size: 45px;
     padding-top: 25px;
   }
 
-  .artist-desc{
+  .artist-desc {
     max-width: 290px;
   }
-
 }
-
 
 /* SONGS */
 
 .songs {
   background-color: black;
   min-height: 100%;
-
 }
 
-.row0{
+.row0 {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.audio h1{
+.audio h1 {
   font-size: 40px;
   margin-left: 25px;
   margin-bottom: 10px;
 }
 
-.social h1{
+.social h1 {
   font-size: 40px;
   margin-right: 25px;
   margin-bottom: 10px;
 }
 
-.audio .links{
+.audio .links {
   display: flex;
   flex-direction: row;
 }
 
-.audio .links img{
+.audio .links img {
   width: 40px;
   height: 40px;
   margin-left: 25px;
 }
 
-.social .links img{
+.social .links img {
   width: 40px;
   height: 40px;
   margin-right: 25px;
 }
 
-@media screen and (max-width: 1024px){
-  .row0{
+@media screen and (max-width: 1024px) {
+  .row0 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .audio{
+  .audio {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .social{
+  .social {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .audio h1{
+  .audio h1 {
     font-size: 6vw;
     margin-left: 0;
   }
 
-  .social h1{
+  .social h1 {
     font-size: 6vw;
     margin-right: 0;
   }
 
-  
-  .audio .links img{
+  .audio .links img {
     width: 40px;
     height: 40px;
     margin-left: 10px;
     margin-right: 10px;
   }
-  
-  .social .links img{
+
+  .social .links img {
     width: 40px;
     height: 40px;
     margin-left: 10px;
@@ -365,28 +349,28 @@ p {
   }
 }
 
-@media screen and (max-width: 600px){
-  .audio h1{
+@media screen and (max-width: 600px) {
+  .audio h1 {
     margin-left: 0;
   }
 
-  .social h1{
+  .social h1 {
     margin-right: 0;
   }
 }
 
-@media (max-width: 500px){
-  .audio .links{
+@media (max-width: 500px) {
+  .audio .links {
     flex-direction: column;
   }
 
-  .audio .links .lin2{
+  .audio .links .lin2 {
     display: flex;
     justify-content: center;
   }
 }
 
-.row1{
+.row1 {
   margin-bottom: 20px;
 }
 
@@ -395,127 +379,115 @@ p {
   margin-top: 30px;
 }
 
-
-.ultimaterow{
+.ultimaterow {
   display: flex;
   flex-direction: row;
 }
 
-.row2{
+.row2 {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: row;
-
 }
 
-.row2 img{
+.row2 img {
   width: 350px;
   height: 350px;
   margin: 20px 20px 5px 20px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 0%;
 }
 
-.row2 img:hover{
+.row2 img:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
-      transform: scale(1.05);
+  transform: scale(1.05);
   /*box-shadow: 0 0 50px #8970A2;*/
-  
 }
 
-.placeholder{
+.placeholder {
   width: 350px;
   height: 0px;
   /*background-color: rgb(29, 0, 56);*/
   margin: 20px;
 }
 
-.item p{
+.item p {
   text-align: center;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1560px){
-  .row2 img{
+@media screen and (max-width: 1560px) {
+  .row2 img {
     width: 300px;
     height: 300px;
   }
 
-  .placeholder{
+  .placeholder {
     width: 300px;
     height: 0px;
   }
-
 }
 
-@media screen and (max-width: 1450px){
-  .ultimaterow{
+@media screen and (max-width: 1450px) {
+  .ultimaterow {
     flex-direction: row;
   }
-  .row2 img{
+  .row2 img {
     width: 300px;
     height: 300px;
   }
 
-  .placeholder{
+  .placeholder {
     width: 300px;
     height: 0px;
   }
-
 }
 
-@media screen and (max-width: 1360px){
-  .ultimaterow{
+@media screen and (max-width: 1360px) {
+  .ultimaterow {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 982px){
-
-  .row2 img{
+@media screen and (max-width: 982px) {
+  .row2 img {
     width: 400px;
     height: 400px;
   }
 
-  .placeholder{
+  .placeholder {
     width: 400px;
     height: 0px;
   }
-  
 }
 
-@media screen and (max-width: 882px){
-
-  .row2 img{
+@media screen and (max-width: 882px) {
+  .row2 img {
     width: 350px;
     height: 350px;
   }
 
-  .placeholder{
+  .placeholder {
     width: 350px;
     height: 0px;
   }
 }
 
-@media (max-width: 400px){
-  .row2 img{
+@media (max-width: 400px) {
+  .row2 img {
     width: 250px;
     height: 250px;
   }
 
-  .placeholder{
+  .placeholder {
     width: 250px;
     height: 0px;
   }
-
 }
-
-
-
 
 /*
 @media screen and (max-width: 1600px){
@@ -556,7 +528,7 @@ p {
 */
 
 /* FOOTER */
-.footer{
+.footer {
   display: flex;
   height: 30px;
   background-color: rgb(26, 26, 26);
@@ -565,8 +537,7 @@ p {
   justify-content: left;
 }
 
-
-.footer h1{
+.footer h1 {
   font-size: 10px;
   text-align: center;
   margin-left: 10px;
