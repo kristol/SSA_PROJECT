@@ -309,7 +309,7 @@ p {
 
 @media (max-width: 400px) {
   .links a {
-    font-size: 10px;
+    font-size: 17px;
   }
 
   .logo-div img {
@@ -321,7 +321,37 @@ p {
   }
 
   .link1 {
-    border: 1px solid white;
+    border: 2px solid white;
+  }
+}
+
+.soc-links{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.socialmedias{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.socialmedias h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.soc-links img {
+  width: 40px;
+  height: 40px;
+  margin:0 25px 0 25px;
+}
+
+@media(max-width: 550px){
+  .socialmedias h1 {
+    font-size: 25px;
   }
 }
 

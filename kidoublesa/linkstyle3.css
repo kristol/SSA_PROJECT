@@ -309,7 +309,7 @@ p {
 
 @media (max-width: 400px) {
   .links a {
-    font-size: 10px;
+    font-size: 17px;
   }
 
   .logo-div img {
@@ -324,6 +324,9 @@ p {
     border: 1px solid white;
   }
 }
+
+
+
 
 /*FOOTER */
 
