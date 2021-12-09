@@ -8,11 +8,11 @@ toggleButton.addEventListener("click", () => {
 
   if (navbarLinks.classList[1] == "active") {
     disableScroll();
- 
+    document.body.style.overflowY = "hidden";
     console.log("scrolling disabled");
   } else {
     enableScroll();
-
+    document.body.style.overflowY = "scroll";
     console.log("scrolling enabled");
   }
 });
