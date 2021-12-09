@@ -9,6 +9,7 @@ toggleButton.addEventListener("click", () => {
     disableScrolling();
     console.log("scrolling disabled");
   } else {
+    document.body.style.overflow = 'visible';
     enableScrolling();
     console.log("scrolling enabled");
   }
