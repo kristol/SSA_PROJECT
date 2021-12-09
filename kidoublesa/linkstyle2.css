@@ -300,7 +300,7 @@ p {
   }
 
   h1 {
-    font-size: 25vw;
+    font-size: 15vw;
   }
 
   h2 {
@@ -319,6 +319,7 @@ p {
   }
   .row {
     padding-right: 11px;
+    padding-bottom: 10px;
   }
 
   .link1 {
@@ -352,7 +353,7 @@ p {
 
 @media(max-width: 550px){
   .socialmedias h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 /*FOOTER */
