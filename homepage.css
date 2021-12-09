@@ -226,8 +226,3 @@ p {
   color: white;
   text-decoration: none;
 }
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
