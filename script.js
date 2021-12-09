@@ -1,6 +1,7 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
+const $body = document.querySelector('body');
+let scrollPosition = 0;
 
 
 toggleButton.addEventListener("click", () => {
@@ -8,14 +9,31 @@ toggleButton.addEventListener("click", () => {
 
   if (navbarLinks.classList[1] == "active") {
     disableScroll();
-    document.body.style.overflowY = "hidden";
+    enable();
     console.log("scrolling disabled");
   } else {
     enableScroll();
-    document.body.style.overflowY = "scroll";
+    disable();
     console.log("scrolling enabled");
   }
 });
+
+
+function enable() {
+  scrollPosition = window.pageYOffset;
+  $body.style.overflow = 'hidden';
+  $body.style.position = 'fixed';
+  $body.style.top = `-${scrollPosition}px`;
+  $body.style.width = '100%';
+};
+
+function disable() {
+  $body.style.removeProperty('overflow');
+  $body.style.removeProperty('position');
+  $body.style.removeProperty('top');
+  $body.style.removeProperty('width');
+  window.scrollTo(0, scrollPosition);
+}
 
 function preventDefault(e){
   e.preventDefault();
