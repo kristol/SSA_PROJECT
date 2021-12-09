@@ -193,18 +193,6 @@ p {
   }
 }
 
-/*
-.mmm{
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
-
-.mmm img{
-  width: 100%;
-  height: 10vh;
-  
-}*/
 .top h1 {
   padding-top: 50px;
   text-align: center;
