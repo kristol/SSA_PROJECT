@@ -375,3 +375,8 @@ p {
   text-align: center;
   margin-left: 10px;
 }
+
+.footer a{
+  color: white;
+  text-decoration: none;
+}
