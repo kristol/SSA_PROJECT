@@ -1,5 +1,7 @@
 ErrorDocument 404 /not_found.html
-DirectoryIndex home.html
+
+RewriteEngine On
+RewriteRule ^(.*)index$ / [R=301,L] 
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
