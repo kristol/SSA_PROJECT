@@ -559,3 +559,18 @@ img {
   color: white;
   text-decoration: none;
 }
+
+@media (min-height: 1400px) {
+  .footer{
+    margin-top: 335px;
+  }
+  .row2 img {
+    width: 800px;
+    height: 800px;
+  }
+
+  .placeholder {
+    width: 800px;
+    height: 0px;
+  }
+}
