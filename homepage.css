@@ -98,6 +98,8 @@ p {
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
   }
 
   .navbar-links li {
@@ -106,7 +108,7 @@ p {
 
   .navbar-links li a {
     font-size: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     padding-right: 0;
     margin-left: 0;
   }
@@ -154,6 +156,14 @@ p {
 
   .navbar-links li a {
     padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .navbar-links li a {
+    padding-right: 0;
+    font-size: 8vw;
   }
 }
 
