@@ -160,7 +160,6 @@ p {
 }
 
 @media (max-width: 400px) {
-
   .navbar-links li a {
     padding-right: 0;
     font-size: 8vw;
@@ -223,7 +222,12 @@ p {
   margin-left: 10px;
 }
 
-.footer a{
+.footer a {
   color: white;
   text-decoration: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

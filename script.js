@@ -5,12 +5,14 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
   
   if (navbarLinks.classList[1] == "active") {
-    disableScrolling();
+    functiondisable();
     console.log("scrolling disabled");
   } else {
-    enableScrolling();
+    functionenable();
     console.log("scrolling enabled");
   }
+  
+
   
 });
 
@@ -28,5 +30,10 @@ function enableScrolling() {
 }
 
 
-
+function functiondisable() {
+  document.body.classList.add("stop-scrolling");
+}
+function functionenable() {
+  document.body.classList.remove("stop-scrolling");
+}
 
