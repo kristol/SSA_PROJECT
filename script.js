@@ -16,10 +16,10 @@ toggleButton.addEventListener("click", () => {
 
 
 function disableScrolling() {
-  var x = window.scrollX;
-  var y = window.scrollY;
+  TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+  LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
   window.onscroll = function () {
-    window.scrollTo(x, y);
+    window.scrollTo(TopScroll, LeftScroll);
   };
 }
 
