@@ -1,22 +1,33 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
+
+
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 
   if (navbarLinks.classList[1] == "active") {
-    disableScrolling();
-    $('body').bind('touchmove', function(e){e.preventDefault()});
+    disableScroll();
+ 
     console.log("scrolling disabled");
   } else {
-    
-    enableScrolling();
-    $('body').unbind('touchmove');
+    enableScroll();
+
     console.log("scrolling enabled");
   }
 });
 
+function preventDefault(e){
+  e.preventDefault();
+}
 
+function disableScroll(){
+  document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+
+function enableScroll(){
+  document.body.removeEventListener('touchmove', preventDefault);
+}
 
 
 function disableScrolling() {
