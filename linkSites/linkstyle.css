@@ -210,10 +210,13 @@ p {
   text-align: center;
   text-transform: uppercase;
 }
-
-.content .top a {
+.top a {
   text-decoration: none;
   color: white;
+}
+
+.content .top .logo-div a {
+  text-decoration: none;
 }
 
 .links {

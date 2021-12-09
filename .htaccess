@@ -1,1 +1,5 @@
 ErrorDocument 404 /not_found.html
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.thessaproject.com/$1 [R=301,L]
