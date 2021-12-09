@@ -267,6 +267,7 @@ p {
   }
   .row {
     padding-right: 55px;
+    padding-bottom: 30px;
   }
 
   .link1 {
@@ -361,7 +362,7 @@ p {
   display: flex;
   height: 30px;
   background-color: rgb(26, 26, 26);
-  margin-top: 20vh;
+  margin-top: 7vh;
   align-items: center;
   justify-content: left;
 }
