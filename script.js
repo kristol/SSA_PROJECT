@@ -6,17 +6,23 @@ toggleButton.addEventListener("click", () => {
 
   if (navbarLinks.classList[1] == "active") {
     document.body.style.overflow = 'hidden';
-    $('body').bind('touchmove', function(e){e.preventDefault()})
     disableScrolling();
     console.log("scrolling disabled");
   } else {
     document.body.style.overflow = 'auto';
-    $('body').unbind('touchmove')
+    
     enableScrolling();
     console.log("scrolling enabled");
   }
+
+  while(navbarLinks.classList[1] == "active"){
+    $('body').bind('touchmove', function(e){e.preventDefault()})
+  }
+  $('body').unbind('touchmove')
   
 });
+
+
 
 
 function disableScrolling() {
