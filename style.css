@@ -33,7 +33,6 @@ img {
   align-items: center;
   background-color: black;
   color: whitesmoke;
-  height: max-content;
 }
 
 .logo img {
@@ -46,7 +45,7 @@ img {
   padding: 0;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navbar-links li {
@@ -81,7 +80,7 @@ img {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 890px) {
+@media (max-width: 890px) {
   .toggle-button {
     display: flex;
   }
@@ -98,6 +97,8 @@ img {
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
   }
 
   .navbar-links li {
@@ -106,7 +107,7 @@ img {
 
   .navbar-links li a {
     font-size: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-right: 0;
     margin-left: 0;
   }
@@ -117,39 +118,50 @@ img {
   }
 }
 
-@media screen and (max-width: 1700px) {
+@media (max-width: 1700px) {
   .navbar-links li a {
     padding-right: 7.5vw;
   }
 }
 
-@media screen and (max-width: 1360px) {
+@media (max-width: 1360px) {
   .navbar-links li a {
     padding-right: 6vw;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .navbar-links li a {
     padding-right: 5vw;
   }
 }
 
-@media screen and (max-width: 1090px) {
+@media (max-width: 1090px) {
   .navbar-links li a {
     padding-right: 3vw;
   }
 }
 
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
+  .navbar-links li a {
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .artist-name h1 {
+    font-size: 3vh;
+  }
+
   .navbar-links li a {
     padding-right: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .artist-name h1 {
-    font-size: 3vh;
+@media (max-width: 400px) {
+  .navbar-links li a {
+    padding-right: 0;
+    font-size: 8vw;
   }
 }
 

@@ -64,7 +64,7 @@ p {
 
 .toggle-button {
   position: absolute;
-  top: 1.5rem;
+  top: 1.3rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -76,11 +76,11 @@ p {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 890px) {
   .toggle-button {
     display: flex;
   }
@@ -93,9 +93,12 @@ p {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
   }
 
   .navbar-links li {
@@ -103,13 +106,15 @@ p {
   }
 
   .navbar-links li a {
-    padding: 0.5rem 1rem;
     font-size: 40px;
+    padding-bottom: 10px;
+    padding-right: 0;
     margin-left: 0;
   }
 
   .navbar-links.active {
     display: flex;
+    overflow-y: hidden;
   }
 }
 
@@ -127,27 +132,36 @@ p {
 
 @media (max-width: 1200px) {
   .navbar-links li a {
-    padding-right: 4vw;
+    padding-right: 5vw;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1090px) {
   .navbar-links li a {
-    padding-right: 2vw;
+    padding-right: 3vw;
   }
 }
 
 @media (max-width: 940px) {
   .navbar-links li a {
-    padding-right: 1vw;
+    padding-right: 2vw;
   }
 }
 
 @media (max-width: 600px) {
   .artist-name h1 {
     font-size: 3vh;
-    padding-left: 10px;
-    padding-bottom: 300px;
+  }
+
+  .navbar-links li a {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-links li a {
+    padding-right: 0;
+    font-size: 8vw;
   }
 }
 
