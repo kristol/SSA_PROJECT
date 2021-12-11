@@ -13,7 +13,15 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-B7QLBZ7F6Z"
     ></script>
-    <script src="ga.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-B7QLBZ7F6Z");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
