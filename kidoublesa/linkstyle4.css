@@ -187,13 +187,13 @@ p {
       rgba(0, 0, 0, 0) 20%,
       #000000 100%
     ),
-    url(../images/waves9.jpg);
+    url(../images/wavesbackground.jpg);
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 20%,
       rgb(0, 0, 0) 100%
     ),
-    url(../images/waves9.jpg);
+    url(../images/wavesbackground.jpg);
   background-size: 100%;
   align-items: center;
   flex-direction: column;
