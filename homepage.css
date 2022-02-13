@@ -36,6 +36,11 @@ p {
   color: whitesmoke;
 }
 
+.navbar-links{
+  width: 100%;
+
+}
+
 .logo img {
   height: 60px;
   padding: 10px 20px 5px 16px;

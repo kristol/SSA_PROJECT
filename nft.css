@@ -15,8 +15,11 @@ body {
   flex-direction: column;
 }
 
-h1{
+h1,
+h2,
+h3 {
   color: white;
+  font-size: 6vh;
 }
 
 p {
@@ -33,9 +36,8 @@ p {
   color: whitesmoke;
 }
 
-.navbar-links{
+.navbar-links {
   width: 100%;
-
 }
 
 .logo img {
@@ -170,59 +172,68 @@ p {
 
 /*NOTAVAILABLE*/
 .notavailable {
-  position: relative; 
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000000;
+  height: 100vh;
 }
-
 
 .content {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  
-  height: 100%;
-}
-
-.infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-}
-
-.desc {
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.desc h1 {
-  position: relative;
-  text-transform: uppercase;
-  color: white;
-}
-
-.line {
-  color: white;
-  width: 40%;
-  border-top: 1px solid white;
-  margin: 10px 0 10px 0;
-}
-.contact{
+.content h1 {
   font-size: 5vw;
+  text-align: center;
 }
 
-.others{
+.content h2 {
+  font-size: 4vw;
+  text-align: center;
+  letter-spacing: 2vw;
+}
+
+.content h3 {
+  color: white;
+  margin-top: 70px;
   font-size: 3vw;
+  text-align: center;
 }
 
+.content a {
+  color: white;
+  margin-top: 70px;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.email input {
+  width: 55vh;
+  border-radius: 0;
+  height: 2vw;
+  margin-bottom: 20vh;
+  text-align: center;
+}
+
+.next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next input {
+  color: white;
+  border: 0px;
+  background-color: rgba(0, 0, 255, 0);
+  font-size: 40px;
+
+}
+.next input:hover {
+  color: grey;
+}
 
 /* FOOTER */
 .footer {
