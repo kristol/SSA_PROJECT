@@ -30,31 +30,3 @@ function disable() {
   $body.style.removeProperty('width');
   window.scrollTo(0, scrollPosition);
 }
-
-/*
-function preventDefault(e){
-  e.preventDefault();
-}
-
-function disableScroll(){
-  document.body.addEventListener('touchmove', preventDefault, { passive: false });
-}
-
-function enableScroll(){
-  document.body.removeEventListener('touchmove', preventDefault);
-}
-
-
-function disableScrolling() {
-  TopScroll = window.pageYOffset || document.documentElement.scrollTop;
-  LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
-  window.onscroll = function () {
-    window.scrollTo(TopScroll, LeftScroll);
-  };
-}
-
-function enableScrolling() {
-  window.onscroll = function () {};
-}
-*/
-
