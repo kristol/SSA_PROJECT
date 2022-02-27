@@ -46,7 +46,7 @@ p {
 }
 
 .content h1 {
-  font-size: 5vw;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -70,13 +70,22 @@ p {
   text-align: center;
   text-decoration: none;
 }
+.email{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .email input {
   width: 55vh;
   border-radius: 0;
-  height: 2vw;
   margin-bottom: 20vh;
   text-align: center;
+}
+
+.email h1 {
+  margin-bottom: 5vh;
 }
 
 .next{
