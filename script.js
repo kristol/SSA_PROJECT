@@ -29,4 +29,4 @@ function disable() {
   $body.style.removeProperty('top');
   $body.style.removeProperty('width');
   window.scrollTo(0, scrollPosition);
-}
+};
