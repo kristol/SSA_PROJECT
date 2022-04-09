@@ -45,6 +45,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background: #000000;
+  margin-top: 67px;
 }
 
 .content {
