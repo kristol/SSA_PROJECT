@@ -1,0 +1,36 @@
+@import url(linkstyle.css);
+h1 {
+	font-size: 11vw;
+}
+.content {
+	flex: 1;
+}
+.top {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	background: -webkit-linear-gradient( bottom, rgba(0, 0, 0, 0) 20%, #000000 100% ), url(../images/wavesbackground-min.jpg);
+	background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 100% ), url(../images/wavesbackground-min.jpg);
+	background-size: 100%;
+	align-items: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+}
+@media (min-width: 1000px) {
+	.top {
+		background-size: cover;
+	}
+}
+@media (max-width: 550px) {
+	h1 {
+		font-size: 20vw;
+	}
+	h2 {
+		font-size: 8vw;
+	}
+}

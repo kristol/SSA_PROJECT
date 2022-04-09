@@ -1,38 +1,38 @@
 @import url(linkstyle.css);
-
 h1 {
   font-size: 11vw;
 }
 
-.content{
-  flex: 1;
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   background: #000000;
-  background: -webkit-linear-gradient(
-      bottom,
-      rgba(0, 0, 0, 0) 20%,
-      #000000 100%
-    ),
-    url(../images/wavesbackground-min.jpg);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 20%,
-      rgb(0, 0, 0) 100%
-    ),
-    url(../images/wavesbackground-min.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0)), to(black)), url(../images/wavesbackground-min.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, black 100%), url(../images/wavesbackground-min.jpg);
   background-size: 100%;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 1000px) {
@@ -45,8 +45,8 @@ h1 {
   h1 {
     font-size: 20vw;
   }
-
   h2 {
     font-size: 8vw;
   }
 }
+/*# sourceMappingURL=linkstyle4.css.map */

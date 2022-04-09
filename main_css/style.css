@@ -1,0 +1,393 @@
+@import url(/css_lib/navbar-footer.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow-x: hidden;
+  font-family: "Heebo", sans-serif;
+  height: calc(100vh - 100px);
+}
+
+h1 {
+  color: white;
+  font-size: 6vh;
+}
+
+p {
+  color: white;
+}
+
+img {
+  color: #fff;
+}
+
+.about-artist {
+  height: 500px;
+  background-image: url("/images/aboutartist-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.artist-name {
+  margin: 30px 0 0 30px;
+}
+
+.artist-name h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.artist-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 30px 30px 0 0;
+  max-width: 500px;
+}
+
+.artist-desc p {
+  text-align: justify;
+  text-justify: auto;
+  text-transform: uppercase;
+}
+
+.songs {
+  background-color: black;
+}
+
+.row0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.audio h1 {
+  font-size: 40px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.audio .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.audio .links img {
+  width: 40px;
+  height: 40px;
+  margin-left: 25px;
+}
+
+.social h1 {
+  font-size: 40px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.social .links img {
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.row1 {
+  margin-bottom: 20px;
+}
+
+.row1 h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ultimaterow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.row2 img {
+  width: 350px;
+  height: 350px;
+  margin: 20px 20px 5px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0%;
+}
+
+.row2 img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.placeholder {
+  width: 350px;
+  height: 0px;
+  margin: 20px;
+}
+
+.item p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .about-artist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+  .artist-name {
+    margin: 0;
+  }
+  .artist-name h1 {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .artist-desc {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  .artist-desc p {
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .artist-name h1 {
+    font-size: 80px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .artist-desc {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 500px) {
+  .artist-name h1 {
+    font-size: 63px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .artist-desc {
+    max-width: 380px;
+  }
+  .audio .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .audio .links .lin2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .artist-name h1 {
+    font-size: 45px;
+    padding-top: 25px;
+  }
+  .artist-desc {
+    max-width: 290px;
+  }
+  .row2 img {
+    width: 250px;
+    height: 250px;
+  }
+  .placeholder {
+    width: 250px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .row0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .audio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .audio h1 {
+    font-size: 6vw;
+    margin-left: 0;
+  }
+  .audio .links img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .social h1 {
+    font-size: 6vw;
+    margin-right: 0;
+  }
+  .social .links img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .audio h1 {
+    margin-left: 0;
+  }
+  .social h1 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .row2 img {
+    width: 300px;
+    height: 300px;
+  }
+  .placeholder {
+    width: 300px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .ultimaterow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .row2 img {
+    width: 300px;
+    height: 300px;
+  }
+  .placeholder {
+    width: 300px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .ultimaterow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .row2 img {
+    width: 400px;
+    height: 400px;
+  }
+  .placeholder {
+    width: 400px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .row2 img {
+    width: 350px;
+    height: 350px;
+  }
+  .placeholder {
+    width: 350px;
+    height: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

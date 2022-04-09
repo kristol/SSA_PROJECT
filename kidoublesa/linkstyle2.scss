@@ -1,0 +1,30 @@
+@import url(linkstyle.css);
+.top {
+	background: -webkit-linear-gradient( bottom, rgba(0, 0, 0, 0) 20%, #000000 100% ), url(../images/VVGIRL-min.png);
+	background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 100% ), url(../images/VVGIRL-min.png);
+	background-size: 100%;
+	align-items: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 550px) {
+	h1 {
+		font-size: 15vw;
+	}
+}
+@media (max-width: 400px) {
+	.row {
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 550px) {
+	.socialmedias {
+		h1 {
+			font-size: 20px;
+		}
+	}
+}

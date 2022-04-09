@@ -1,0 +1,94 @@
+@import url(/css_lib/navbar-footer.css);
+/*NOTAVAILABLE*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow-x: hidden;
+	font-family: "Heebo", sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	color: white;
+	font-size: 6vh;
+}
+h2 {
+	color: white;
+	font-size: 6vh;
+}
+h3 {
+	color: white;
+	font-size: 6vh;
+}
+p {
+	color: white;
+}
+.notavailable {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	h1 {
+		font-size: 50px;
+		text-align: center;
+	}
+	h2 {
+		font-size: 4vw;
+		text-align: center;
+		letter-spacing: 2vw;
+	}
+	h3 {
+		color: white;
+		margin-top: 70px;
+		font-size: 3vw;
+		text-align: center;
+	}
+	a {
+		color: white;
+		margin-top: 70px;
+		font-size: 3vw;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+.email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	input {
+		width: 55vh;
+		border-radius: 0;
+		margin-bottom: 20vh;
+		text-align: center;
+	}
+	h1 {
+		margin-bottom: 5vh;
+	}
+}
+.next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	input {
+		color: white;
+		border: 0px;
+		background-color: rgba(0, 0, 255, 0);
+		font-size: 40px;
+		&:hover {
+			color: grey;
+		}
+	}
+}
