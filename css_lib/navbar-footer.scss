@@ -6,13 +6,16 @@
   color: whitesmoke;
   @media (min-width: 890px) {
     position: fixed;
-    width: -moz-available;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
   
 }
 
 .navbar-links {
   width: 100%;
+
   ul {
     margin: 0;
     padding: 0;
@@ -31,6 +34,12 @@
       text-transform: uppercase;
       font-size: 20px;
     }
+  }
+
+  .dead{
+    text-decoration: line-through;
+    text-decoration-thickness: 15%;
+    pointer-events: none;
   }
 }
 .logo {
