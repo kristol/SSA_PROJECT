@@ -132,6 +132,12 @@ img {
 		text-align: center;
 		text-transform: uppercase;
 	}
+	.countdown{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
 }
 @media (max-width: 1180px) {
 	.about-artist {

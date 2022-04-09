@@ -22,7 +22,8 @@ body {
   height: 100vh;
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
 }
 
@@ -32,11 +33,13 @@ html, body {
 
 .main h1 {
   color: white;
+  font-size: 2vw;
 }
 
 .main a {
   color: white;
   text-decoration: none;
+  font-size: 1vw;
 }
 
 .main .name {
@@ -54,7 +57,27 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  margin-bottom: 100vh;
+}
+
+.main .name #name {
+  width: 75vh;
+  margin-bottom: 15vh;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  border-width: 0px;
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+          box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+}
+
+.main .name #name:focus {
+  outline: none;
 }
 
 .main .links {
@@ -72,7 +95,6 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  margin-bottom: 100vh;
 }
 
 .main .pics {
@@ -90,7 +112,6 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  margin-bottom: 100vh;
 }
 
 .main .email {
@@ -108,7 +129,27 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  margin-bottom: 100vh;
+}
+
+.main .email #email1 {
+  width: 75vh;
+  margin-bottom: 15vh;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  border-width: 0px;
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+          box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+}
+
+.main .email #email1:focus {
+  outline: none;
 }
 
 .main .cheers {
@@ -126,7 +167,13 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  margin-bottom: 100vh;
+}
+
+@media (max-width: 890px) {
+  .navbar {
+    position: fixed;
+    width: -moz-available;
+  }
 }
 
 .footer {

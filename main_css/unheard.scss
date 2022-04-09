@@ -14,18 +14,22 @@ body {
   color: white;
   height: 100vh;
 }
-html, body{
-    overflow: hidden;
+html,
+body {
+  overflow: hidden;
 }
 
 .main {
   height: 100vh;
   h1 {
     color: white;
+    // margin-bottom: 25vh;
+    font-size: 2vw;
   }
   a {
     color: white;
     text-decoration: none;
+    font-size: 1vw;
   }
   .name {
     display: flex;
@@ -33,7 +37,24 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-bottom: 100vh;
+    #name {
+        width: 75vh;
+        margin-bottom: 15vh;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+        border-width: 0px;
+        border-color: #cccccc;
+        background-color: #ffffff;
+        color: #000000;
+        border-style: solid;
+        border-radius: 0px;
+        box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+        text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+        &:focus{
+          outline: none;
+        }
+    }
   }
   .links {
     display: flex;
@@ -41,7 +62,6 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-bottom: 100vh;
   }
   .pics {
     display: flex;
@@ -49,7 +69,6 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-bottom: 100vh;
   }
   .email {
     display: flex;
@@ -57,7 +76,24 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-bottom: 100vh;
+    #email1 {
+      width: 75vh;
+      margin-bottom: 15vh;
+      text-align: center;
+      padding: 5px;
+      font-size: 16px;
+      border-width: 0px;
+      border-color: #cccccc;
+      background-color: #ffffff;
+      color: #000000;
+      border-style: solid;
+      border-radius: 0px;
+      box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+      text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+      &:focus{
+        outline: none;
+      }
+    }
   }
   .cheers {
     display: flex;
@@ -65,10 +101,15 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-bottom: 100vh;
   }
 }
 
+.navbar {
+  @media (max-width: 890px) {
+    position: fixed;
+    width: -moz-available;
+  }
+}
 .footer {
   margin-top: 97vh;
   position: fixed;

@@ -16,10 +16,11 @@ toggleButton.addEventListener("click", () => {
 
 
 function enable() {
-  scrollPosition = window.pageYOffset;
+  scrollPosition = window.scrollY;
   $body.style.overflow = 'hidden';
   $body.style.position = 'fixed';
-  $body.style.top = `-${scrollPosition}px`;
+  // $body.style.top = `-${scrollPosition}px`;
+  $body.style.top = 0;
   $body.style.width = '100%';
 };
 
