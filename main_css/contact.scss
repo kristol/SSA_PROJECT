@@ -15,54 +15,38 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-h1 {
+p,h1,h2 {
 	color: white;
 }
-p {
-	color: white;
-}
-.notavailable {
-	position: relative;
+
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	height: 100vh;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #000000;
-}
-.content {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	height: 100%;
-}
-.infos {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	align-items: center;
-}
-.desc {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	h1 {
-		position: relative;
-		text-transform: uppercase;
-		color: white;
+	margin-top: 67px;
+	.inner{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h1{
+			font-size: 6vh;
+		}
+		h2{
+			font-size: 2.5vh;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		@media (max-width: 890px){
+			h1{
+				font-size: 4vh;
+			}
+			h2{
+				font-size: 1.5vh;
+			}
+		}
 	}
-}
-.line {
-	color: white;
-	width: 40%;
-	border-top: 1px solid white;
-	margin: 10px 0 10px 0;
-}
-.contact {
-	font-size: 5vw;
-}
-.others {
-	font-size: 3vw;
 }

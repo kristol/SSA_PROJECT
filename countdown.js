@@ -8,17 +8,17 @@ var myfunc = setInterval(function () {
   var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-  if(days > 10){
+  if(days >= 10){
     document.getElementById("days").innerHTML = days + "d/ ";
   }else{
     document.getElementById("days").innerHTML = "0" + days + "d/ ";
   }
-  if(hours > 10){
+  if(hours >= 10){
     document.getElementById("hours").innerHTML = hours + "h/ ";
   }else{
     document.getElementById("hours").innerHTML ="0" + hours + "h/ ";
   }
-  if(minutes > 10){
+  if(minutes >= 10){
     document.getElementById("mins").innerHTML = minutes + "m/ ";
   }else{
     document.getElementById("mins").innerHTML ="0" + minutes + "m/ ";

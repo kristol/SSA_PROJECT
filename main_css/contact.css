@@ -23,46 +23,29 @@ body {
           flex-direction: column;
 }
 
-h1 {
+p, h1, h2 {
   color: white;
-}
-
-p {
-  color: white;
-}
-
-.notavailable {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #000000;
-  margin-top: 67px;
 }
 
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 100%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  margin-top: 67px;
 }
 
-.infos {
+.content .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,46 +56,27 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.content .inner h1 {
+  font-size: 6vh;
 }
 
-.desc h1 {
-  position: relative;
+.content .inner h2 {
+  font-size: 2.5vh;
   text-transform: uppercase;
-  color: white;
+  text-align: center;
 }
 
-.line {
-  color: white;
-  width: 40%;
-  border-top: 1px solid white;
-  margin: 10px 0 10px 0;
-}
-
-.contact {
-  font-size: 5vw;
-}
-
-.others {
-  font-size: 3vw;
+@media (max-width: 890px) {
+  .content .inner h1 {
+    font-size: 4vh;
+  }
+  .content .inner h2 {
+    font-size: 1.5vh;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

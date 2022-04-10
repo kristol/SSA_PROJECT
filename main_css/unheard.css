@@ -25,10 +25,11 @@ body {
 html,
 body {
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .main {
-  height: 100vh;
+  height: 97vh;
 }
 
 .main h1 {
@@ -43,10 +44,52 @@ body {
 }
 
 .main a {
-  margin-top: 100px;
   color: white;
   text-decoration: none;
   font-size: 4vh;
+}
+
+.main .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .buttons a {
+  margin: 0 10px 0 10px;
+}
+
+.main .fileup {
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  height: 37px;
+  width: 37px;
+}
+
+.main .fileup input {
+  display: none;
+}
+
+.main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
 .main .name {
@@ -109,6 +152,32 @@ body {
   height: 100vh;
 }
 
+.main .links #link {
+  width: 40vw;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  border-width: 0px;
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+          box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+}
+
+.main .links #link:focus {
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .main .links #link {
+    width: 70vw;
+  }
+}
+
 .main .pics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,7 +214,6 @@ body {
 
 .main .email #email1 {
   width: 40vw;
-  margin-bottom: 15vh;
   text-align: center;
   padding: 5px;
   font-size: 16px;
@@ -185,6 +253,23 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+}
+
+.main .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
 }
 
 @media (max-width: 890px) {

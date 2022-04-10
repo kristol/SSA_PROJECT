@@ -51,31 +51,68 @@
       <div class="logo"></div>
     </nav>
     <div class="main">
+      <div class="text">
+        <div class="cont">
+          <h1>WELCOME TO "THE SSA PROJECT UNHEARD" UPLOAD PLATFORM</h1>
+          <h2>FILL IN THE REQUIRED INFORMATION TO SUBMIT YOUR SONG</h2>
+        </div>
+        <div class="buttons">
+          <a href="#names">UPLOAD</a>
+        </div>
+      </div>
+      
+
+      <section id="names"></section>
       <div class="name">
-        <h1>YOUR ARTIST NAME</h1>
-        <input type="text" id="name" name="name" >
-        <a href="#links">NEXT</a>
+        <div class="cont">
+          <h1>YOUR ARTIST NAME</h1>
+          <input type="text" id="name" name="name" maxlength="60" />
+        </div>
+        <div class="buttons">
+          <a href="#links">NEXT</a>
+        </div>
       </div>
       <section id="links"></section>
       <div class="links">
-        <h1>LINKS TO YOUR SONG</h1>
-        <a href="#pics">NEXT</a>
-
+        <div class="cont">
+          <h1>LINKS TO YOUR SONG</h1>
+          <input type="text" id="link" name="link" />
+        </div>
+        <div class="buttons">
+          <a href="#names">BACK</a>
+          <a href="#pics">NEXT</a>
+        </div>
       </div>
       <section id="pics"></section>
-      <div class="pics" >
-        <h1>YOUR SONG'S COVER ART</h1>
-        <a href="#email">NEXT</a>
+      <div class="pics">
+        <div class="cont">
+          <h1>YOUR SONG'S COVER ART</h1>
+          <div class="fileup">
+            <input type="file" name="file" id="file" />
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="#links">BACK</a>
+          <a href="#email">NEXT</a>
+        </div>
       </div>
       <section id="email"></section>
-      <div class="email" >
-        <h1>YOUR EMAIL ADDRESS</h1>
-        <input type="email" id="email1" name="email" > 
-        <a href="#cheers">SUBMIT</a>
+      <div class="email">
+        <div class="cont">
+          <h1>YOUR EMAIL ADDRESS</h1>
+          <input type="email" id="email1" name="email" />
+        </div>
+        <div class="buttons">
+          <a href="#pics">BACK</a>
+          <a href="#cheers">SUBMIT</a>
+        </div>
       </div>
       <section id="cheers"></section>
-      <div class="cheers" >
-        <h1>YOUR MUSIC HAS BEEN SUBMITTED</h1>
+      <div class="cheers">
+        <div class="cont">
+          <h1>YOUR MUSIC HAS BEEN SUBMITTED</h1>
+        </div>
+
         <a href="/audio.html">BACK TO THE HOME PAGE</a>
       </div>
     </div>
@@ -83,6 +120,6 @@
       <h1>THE_SSA_PROJECT</h1>
       <h1><a href="contact.html">CONTACT</a></h1>
     </div>
-     <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -30,7 +30,7 @@ img {
 
 .about-artist {
   height: 500px;
-  background-image: url("/images/aboutartist-min.jpg");
+  background-image: url("/images/cutted69.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -45,6 +45,12 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 30px;
+}
+
+@media (max-width: 890px) {
+  .about-artist {
+    background-image: url("/images/aboutartist-min.jpg");
+  }
 }
 
 .artist-name {

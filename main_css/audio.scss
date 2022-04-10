@@ -49,5 +49,10 @@ body {
         margin-top: 200px;
         margin-bottom: 100px;
     }
+    .dead{
+      text-decoration: line-through;
+      text-decoration-thickness: 15%;
+      pointer-events: none;
+    }
   }
 }

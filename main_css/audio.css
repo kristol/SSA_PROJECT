@@ -80,4 +80,10 @@ body {
   margin-top: 200px;
   margin-bottom: 100px;
 }
+
+.audio .content .dead {
+  text-decoration: line-through;
+  text-decoration-thickness: 15%;
+  pointer-events: none;
+}
 /*# sourceMappingURL=audio.css.map */

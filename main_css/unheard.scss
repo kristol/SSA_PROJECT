@@ -17,10 +17,11 @@ body {
 html,
 body {
   overflow: hidden;
+  scroll-behavior:smooth
 }
 
 .main {
-  height: 100vh;
+  height: 97vh;
   h1 {
     color: white;
     // margin-bottom: 25vh;
@@ -30,11 +31,40 @@ body {
     }
   }
   a {
-    margin-top: 100px;
     color: white;
     text-decoration: none;
     font-size: 4vh;
   }
+  
+  
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    a{
+      margin: 0 10px 0 10px;
+    }
+  }
+  
+  .fileup{
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+    height: 37px;
+    width: 37px;
+    input{
+      display: none;
+    }
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
   .name {
     display: flex;
     flex-direction: column;
@@ -62,12 +92,33 @@ body {
       }
     }
   }
+
   .links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    #link{
+      width: 40vw;
+      text-align: center;
+      padding: 5px;
+      font-size: 16px;
+      border-width: 0px;
+      border-color: #cccccc;
+      background-color: #ffffff;
+      color: #000000;
+      border-style: solid;
+      border-radius: 0px;
+      box-shadow: 0px 0px 5px rgba(66, 66, 66, 0);
+      text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+      &:focus {
+        outline: none;
+      }
+      @media (max-width: 900px) {
+        width: 70vw;
+      }
+    }
   }
   .pics {
     display: flex;
@@ -84,7 +135,6 @@ body {
     height: 100vh;
     #email1 {
       width: 40vw;
-      margin-bottom: 15vh;
       text-align: center;
       padding: 5px;
       font-size: 16px;
@@ -111,6 +161,13 @@ body {
     justify-content: center;
     height: 100vh;
   }
+  .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
 }
 
 .navbar {
@@ -119,6 +176,7 @@ body {
     width: -moz-available;
   }
 }
+
 .footer {
   margin-top: 97vh;
   position: fixed;
